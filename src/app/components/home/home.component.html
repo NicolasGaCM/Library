@@ -16,7 +16,10 @@
     </div>
   </div>
 </div>
-<app-info-modal [isVisible]="showModal" [selectedBookId]="selectedBookId">
+<app-info-modal
+  [isVisible]="showModal"
+  [book]="selectedBook"
+  (close)="closeModal()">
 </app-info-modal>
 
 <app-footer></app-footer>
